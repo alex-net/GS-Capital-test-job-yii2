@@ -1,0 +1,5 @@
+from php:8.1-fpm-alpine
+
+run  docker-php-ext-install pdo_mysql && \
+    wget https://getcomposer.org/installer && \
+    php installer --install-dir='/usr/bin' --filename='composer'
