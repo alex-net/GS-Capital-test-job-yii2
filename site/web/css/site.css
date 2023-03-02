@@ -82,3 +82,12 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+
+.plaing-list {display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0.5em 0 ;}
+.plaing-list .summary {display: none;}
+.plaing-list .lot-item {flex-basis: 24%;padding: 0.5em; box-sizing: border-box;border: 1px solid black; border-radius: 0.5em; margin: 0.1%;}
+.plaing-list .lot-item .time-lost {width: 100%; height: 0.5em; border: 1px solid black;}
+.plaing-list .lot-item .time-lost .scale {height: 100%; background: red;}
+.plaing-list .lot-item .up-price {color: green; cursor: pointer;}
+.plaing-list .lot-item .up-price.closed {color: red;text-decoration: line-through;}

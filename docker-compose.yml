@@ -20,6 +20,7 @@ services:
       dockerfile: php-docker.file
     volumes:
       - ./site:/web-app
+      - ./php.conf:/usr/local/etc/php-fpm.d/zz-scanda-docker.conf
     working_dir: /web-app
     user: 1000:1000
     depends_on:

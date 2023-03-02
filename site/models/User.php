@@ -67,6 +67,11 @@ class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
         return null;
     }
 
+    public static function getIds()
+    {
+        return array_keys(static::$users);
+    }
+
     /**
      * {@inheritdoc}
      */
